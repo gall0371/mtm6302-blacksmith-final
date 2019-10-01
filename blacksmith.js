@@ -55,7 +55,7 @@ function fire () {
   if (game.fire) {
     game.fire = false
     return 'You have put out the fire.'
-  } else if (game.wood > settings.fireWood) {
+  } else if (game.wood >= settings.fireWood) {
     game.wood -= settings.fireWood
     game.fire = true
     return 'You have started the fire.'
